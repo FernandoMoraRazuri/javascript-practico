@@ -17,7 +17,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 header {
   color: white;
   width: 100%;
-  height: 250px;
+  height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,15 +34,26 @@ header p {
   padding-top: 8px;
 }
 
+main {
+  width: 100%;
+  height: 60vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Seccion del cuadrado */
+
 .section-cuadrado {
   width: 100%;
-  height: 500px;
-  position: absolute;
-  top: 0;
+  /* height: 300px; */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+}
+
+.section-cuadrado span {
+  color: white;
 }
 
 .section-cuadrado h2 {
@@ -65,5 +76,77 @@ header p {
 }
 
 .section-cuadrado form button {
+  width: 165px;
+}
+
+/* Seccion del triangulo */
+
+.section-triangulo {
+  width: 100%;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section-triangulo span {
+  color: white;
+}
+
+.section-triangulo h2 {
+  color: white;
+  padding-bottom: 12px;
+}
+
+.section-triangulo form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-triangulo form label {
+  color: white;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-triangulo form button {
+  width: 165px;
+}
+
+/* Seccion del circulo */
+
+.section-circulo {
+  width: 100%;
+  /* height: 500px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.section-circulo h2 {
+  color: white;
+  padding-bottom: 12px;
+}
+
+.section-circulo form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-circulo form label {
+  color: white;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-circulo form button {
   width: 165px;
 }
