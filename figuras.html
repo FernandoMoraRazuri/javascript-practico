@@ -14,50 +14,68 @@
   </header>
 
   <main>
-    <section class="section-cuadrado">
-      <form>
-        <div class="section-cuadrado-cuadrado"></div>
-        <h2>Cuadrado</h2>
-        <span>Escribe en centímetros cuanto mide cada lado de tu cuadrado</span>
-        <input type="number" id="input-cuadrado" placeholder="Lado">
-        
-        <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
-        <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
-      </form>
-    </section>
+    <div class="main-container-01">
+      <section class="section-cuadrado">
+        <form>
+          <div class="section-cuadrado-cuadrado"></div>
+          <h2>Cuadrado</h2>
+          <span>Escribe en centímetros cuanto mide cada lado de tu cuadrado</span>
+          <input type="number" id="input-cuadrado" placeholder="Lado">
+          
+          <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el perímetro</button>
+          <button type="button" onclick="calcularAreaCuadrado()">Calcular el área</button>
+        </form>
+      </section>
+  
+      <section class="section-triangulo">
+        <form>
+          <div class="section-triangulo-triangulo"></div>
+          <h2>Triángulo</h2>
+          <span>Escribe en centímetros cuánto mide cada lado de tu triangulo y su altura</span>
+          <div class="triangulo-input-container">
+            <input type="number" id="input-triangulo-01" placeholder="Lado 1">     
+            <input type="number" id="input-triangulo-02" placeholder="Lado 2"> 
+            <input type="number" id="input-triangulo-03" placeholder="Base">
+            <input type="number" id="input-triangulo-04" placeholder="Altura">
+          </div>
+          <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
+          <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
+        </form>
+      </section>
+  
+      <section class="section-circulo">
+        <form>
+          <div class="section-circulo-circulo"></div>
+          <h2>Círculo</h2>
+          <span for="input-circulo">
+            Escribe en centímetros cuando mide el radio de tu círculo
+          </span>
+          <input type="number" id="input-circulo" placeholder="Radio">
+          <button type="button" onclick="calcularDiametroCirculo()">Calcular el diámetro</button>
+          <button type="button" onclick"calcularPerimetroCirculo()">Calcular el perímetro</button>
+          <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
+        </form>
+      </section>
+    </div>
 
-    <section class="section-triangulo">
-      <form>
-        <div class="section-triangulo-triangulo"></div>
-        <h2>Triángulo</h2>
-        <span>Escribe en centímetros cuánto mide cada lado de tu triangulo y su altura</span>
-        <div class="triangulo-input-container">
-          <input type="number" id="input-triangulo-01" placeholder="Lado 1">     
-          <input type="number" id="input-triangulo-02" placeholder="Lado 2"> 
-          <input type="number" id="input-triangulo-03" placeholder="Base">
-          <input type="number" id="input-triangulo-04" placeholder="Altura">
-        </div>
-        <button type="button" onclick="calcularPerimetroTriangulo()">Calcular el perímetro</button>
-        <button type="button" onclick="calcularAreaTriangulo()">Calcular el área</button>
-      </form>
-    </section>
+    <div class="main-container-02">
+      <section class="section-triangulo-is">
+        <form>
+          <div class="section-triangulo-triangulo-is"></div>
+          <h2>Triángulo Isósceles</h2>
+          <span>Escribe en centímetros cuánto mide cada lado de tu triangulo</span>
+          <div class="triangulo-is-input-container">
+            <input type="number" id="input-triangulo-is-01" placeholder="Lado 1">     
+            <input type="number" id="input-triangulo-is-02" placeholder="Lado 2"> 
+            <input type="number" id="input-triangulo-is-03" placeholder="Base">
+          </div>
+          <button type="button" onclick="calcularPerimetroTrianguloIs()">Calcular el perímetro</button>
+          <button type="button" onclick="calcularAlturaTrianguloIsosceles()">Calcular la altura</button>
+        </form>
+      </section>
+    </div>
 
-    <section class="section-circulo">
-      <form>
-        <div class="section-circulo-circulo"></div>
-        <h2>Círculo</h2>
-        <span for="input-circulo">
-          Escribe en centímetros cuando mide el radio de tu círculo
-        </span>
-        <input type="number" id="input-circulo" placeholder="Radio">
-        <button type="button" onclick="calcularDiametroCirculo()">Calcular el diámetro</button>
-        <button type="button" onclick="calcularPerimetroCirculo()">Calcular el perímetro</button>
-        <button type="button" onclick="calcularAreaCirculo()">Calcular el área</button>
-      </form>
-    </section>
   </main>
-
-
   <script src="./figuras.js"></script>
 </body>
 </html>

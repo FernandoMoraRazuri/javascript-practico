@@ -118,7 +118,7 @@ function calcularPerimetroTriangulo(){
   const value03 = parseInt(input03.value);
 
   const perimetro = perimetroTriangulo(value01, value02, value03);
-  alert(perimetro + " cm");
+  alert("El perímetro de tu triángulo mide: " + perimetro + " cm");
 }
 
 function calcularAreaTriangulo(){
@@ -156,4 +156,45 @@ function calcularAreaCirculo(){
 
   const area = areaCirculo(value);
   alert(area + " cm");
+}
+
+// RETO TRIANGULO ISOSCELES
+
+function calcularPerimetroTrianguloIs(){
+  const input01 = document.getElementById("input-triangulo-is-01");
+  const value01 = parseInt(input01.value);
+
+  const input02 = document.getElementById("input-triangulo-is-02");
+  const value02 = parseInt(input02.value);
+
+  const input03 = document.getElementById("input-triangulo-is-03");
+  const value03 = parseInt(input03.value);
+
+  const perimetro = perimetroTriangulo(value01, value02, value03);
+  alert("El perímetro de tu triángulo mide: " + perimetro + " cm");
+}
+
+function alturaTrianguloIsosceles(lado1, base) {
+  return Math.sqrt((lado1**2) - ((base**2) / 4));
+}
+
+function calcularAlturaTrianguloIsosceles(){
+  const input01 = document.getElementById("input-triangulo-is-01");
+  const value01 = input01.value;
+
+  const input02 = document.getElementById("input-triangulo-is-02");
+  const value02 = input02.value;
+
+  const input03 = document.getElementById("input-triangulo-is-03");
+  const value03 = input03.value;
+
+  console.log(value01, value02, value03);
+
+  if(value01 == value02 && value01 != value03){
+    const altura = alturaTrianguloIsosceles(value01, value03);
+    alert("La altura de tu triángulo es de: " + parseInt(altura) + " cm");
+  }
+  else {
+    alert("Tu figura no es un triángulo isósceles, por favor prueba en otra opción");
+  }
 }
