@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+font-family: poppins;
+color: grey;
+background: #ecf0f3;
+}
+
+header {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  margin-top: 16px;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: #1DA1F2;
+}
+
+header p {
+  font-size: 1.4rem;
+  padding-top: 4px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
+  flex-direction: column;
+}
+
+/* Seccion del cuadrado */
+
+.section-cuadrado {
+  width: 100%;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.section-cuadrado form {  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 20px;
+  height: 270px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.section-cuadrado-cuadrado {
+  width: 60px;
+  height: 60px;
+  border: 3px solid grey;
+  border-radius: 10px;
+  padding-top: 8px;
+}
+
+.section-cuadrado h2 {
+  padding: 8px 0px 0px 0px;
+  color: #1DA1F2;
+}
+
+.section-cuadrado form span {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.section-cuadrado form input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  width: 130px;
+  height: 20px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.section-cuadrado form input::placeholder {
+  color: gray;
+}
+
+.section-cuadrado form button {
+  margin-bottom: 6px;
+  background: #1DA1F2;
+  width: 130px;
+  height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ecf0f3;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+.section-cuadrado form button:hover {
+  box-shadow: none;
+}
+
+/* Seccion del triangulo */
+
+.section-triangulo {
+  width: 100%;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.section-triangulo form {  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 20px;
+  height: 270px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.section-triangulo-triangulo {
+
+  padding-top: 8px;
+}
+
+.section-triangulo h2 {
+  padding: 8px 0px 4px 0px;
+  color: #1DA1F2;
+}
+
+.section-triangulo form span {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.section-triangulo .triangulo-input-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+}
+
+.section-triangulo form input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  width: 65px;
+  height: 20px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.section-triangulo form input::placeholder {
+  color: gray;
+}
+
+.section-triangulo form button {
+  margin-bottom: 6px;
+  background: #1DA1F2;
+  width: 130px;
+  height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ecf0f3;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+.section-triangulo form button:hover {
+  box-shadow: none;
+}
+
+/* Seccion del triangulo isosceles*/
+
+.section-triangulo-is {
+  width: 100%;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.section-triangulo-is form {  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 20px;
+  height: 270px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.section-triangulo-triangulo-is {
+
+  padding-top: 8px;
+}
+
+.section-triangulo-is h2 {
+  padding: 8px 0px 4px 0px;
+  color: #1DA1F2;
+}
+
+.section-triangulo-is form span {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.section-triangulo-is .triangulo-is-input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-triangulo-is form input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  width: 130px;
+  height: 20px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.section-triangulo-is form input::placeholder {
+  color: gray;
+}
+
+.section-triangulo-is form button {
+  margin-bottom: 6px;
+  background: #1DA1F2;
+  width: 130px;
+  height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ecf0f3;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+.section-triangulo-is form button:hover {
+  box-shadow: none;
+}
+
+/* Seccion del circulo */
+
+.section-circulo {
+  width: 100%;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.section-circulo form {  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 20px;
+  height: 270px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.section-circulo-circulo {
+  width: 60px;
+  height: 60px;
+  border: 3px solid grey;
+  border-radius: 50px;
+  padding-top: 8px;
+}
+
+.section-circulo h2 {
+  padding: 8px 0px 0px 0px;
+  color: #1DA1F2;
+}
+
+.section-circulo form span {
+  text-align: center;
+  padding-bottom: 8px;
+}
+
+.section-circulo form input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  width: 130px;
+  height: 20px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+.section-circulo form input::placeholder {
+  color: gray;
+}
+
+.section-circulo form button {
+  margin-bottom: 6px;
+  background: #1DA1F2;
+  width: 130px;
+  height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ecf0f3;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+.section-circulo form button:hover {
+  box-shadow: none;
+}
