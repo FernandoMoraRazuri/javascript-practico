@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interes compuesto</title>
+
+  <link rel="stylesheet" href="./css/interes-compuesto.css">
+</head>
+<body>
+  <header>
+    <h1>Interés compuesto</h1>
+    <p>Reto Final - Curso Practico de JavaScript en Platzi</p>
+    <span>Te ayudamos a calcular tus resultados usando interés simple o compuesto</span>
+
+  </header>
+
+  <main>
+    <section>
+      <form action="">
+        
+          <label for="input-capital" class="label-capital">
+            Dinos cuánto dinero piensas invertir
+          </label>
+          <input type="number" id="input-capital" placeholder="$">
+          
+          <label for="input-interes" class="label-interes">
+            Cuentanos la tasa de interes
+          </label>
+          <input type="number" id="input-interes" placeholder="%">
+          
+          <label for="input-periodos" class="label-periodos">
+            Finalmente, indicanos por cuantos meses vas a dejar crecer tu dinero
+          </label>
+          <input type="number" id="input-periodos" placeholder="">
+  
+          <button type="button" onclick="calcularInteresSimpleHTML(), calcularInteresCompuestoHTML()">Calcular</button>
+        </class=>
+      </form>
+    </section>
+
+    <section class="section-result">
+      <div>
+        <h2>Tus resultados</h2>
+        <p id="result-simple"></p>
+        <p id="result-compuesto"></p>
+      </div>
+    </section>
+  </main>
+
+  <script src="./interes-compuesto-reto-final.js"></script>
+</body>
+</html>

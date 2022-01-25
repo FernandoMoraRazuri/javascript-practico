@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+font-family: poppins;
+color: grey;
+background: #ecf0f3;
+}
+
+header {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-top: 20px;
+  margin-top: 16px;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: #1DA1F2;
+}
+
+header p {
+  font-size: 1.4rem;
+  padding-top: 4px;
+}
+
+header span {
+  color: #1DA1F2;
+  font-weight: 500;
+}
+
+main {
+  width: 100%;
+  /* display: flex;
+  flex-direction: column; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.section-result div {
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 20px;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 8px;
+}
+
+.section-result div h2 {
+  margin-top: 16px;
+}
+
+.section-result div p {
+  text-align: justify;
+  margin-top: 8px;
+  padding: 8px;
+}
+
+.section-result div p:hover {
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.section-result div p:nth-child(2) {
+  text-align: justify;
+  margin-top: 8px;
+  padding: 8px;
+}
+
+.section-result div p:nth-child(2):hover {
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  /* height: 300px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 8px;
+}
+
+section form {  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 20px;
+  height: 250px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+section form .input-label-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+section h2 {
+  color: #1DA1F2;
+  text-align: center;
+  margin-bottom: 12px;
+  font-size: 1.7rem;
+}
+
+section form label {
+  text-align: center;
+  padding-bottom: 8px;
+  font-size: 1rem;
+}
+
+section form input {
+  background: #ecf0f3;
+  padding: 10px;
+  padding-left: 10px;
+  margin-bottom: 6px;
+  width: 130px;
+  height: 20px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #cbced1, inset -6px -6px 6px white;
+}
+
+section form input::placeholder {
+  color: gray;
+}
+
+section form button {
+  margin-top: 12px;
+  background: #1DA1F2;
+  width: 130px;
+  height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ecf0f3;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+}
+
+section form button:hover {
+  box-shadow: none;
+}
+
+#result {
+  margin-top: 8px;
+}
