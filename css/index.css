@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: poppins;
+  color: grey;
+  background: #ecf0f3;
+}
+
+header {
+  width: 100%;
+  color: #1DA1F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 18px;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+header h1 {
+  font-size: 3.4rem;
+  color: #1DA1F2;
+}
+
+header p {
+  font-size: 1.4rem;
+  padding-top: 4px;
+}
+
+section {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ol {
+  margin-top: 20px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  border-radius: 20px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+nav ol li a, nav ol li {
+  color: #1DA1F2;
+}
+
+nav ol li a:hover, nav ol li:hover {
+  text-decoration: #cbced1 wavy underline;
+}
+
+nav ol li a{
+  text-decoration: none;
+}
+
+.social-media{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 16px;
+  margin-right: 16px;
+}
+
+.social-media-twitter img{
+  /* background-image: url(../img/Twitter.ico); */
+  width: 20px;
+}
+
+.social-media-github img{
+  /* background-image: url(https://cdn-icons-png.flaticon.com/512/25/25231.png); */
+  width: 20px;
+}

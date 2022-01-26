@@ -6,7 +6,9 @@ function calcularInteresSimple(capital, interes, periodos){
 }
 
 function calcularInteresCompuesto(capital, interes, periodos){
-  const interesCompuesto = capital * ((1 + interes)**periodos);
+  const interesFinal = (interes / 100) / 12;
+  const operacion = Math.pow(1 + interesFinal, periodos); 
+  const interesCompuesto = (capital * operacion).toFixed(2);
   return interesCompuesto;
 }
 

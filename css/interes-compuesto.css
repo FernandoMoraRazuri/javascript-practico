@@ -43,6 +43,32 @@ header span {
   font-weight: 500;
 }
 
+.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 12px;
+  background: #1DA1F2;
+  width: 70px;
+  height: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: #ecf0f3;
+  box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+  transition: 0.5s;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 12px;
+  margin-left: 16px;
+  padding: 2px;
+}
+
+.home:hover {
+  box-shadow: none;
+}
+
 main {
   width: 100%;
   /* display: flex;
