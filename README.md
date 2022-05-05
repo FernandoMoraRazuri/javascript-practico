@@ -1,6 +1,6 @@
 # javascript-practico
 
-...
+Proyecto hecho a lo largo del curso de Platzi 'JavaScript Práctico'
 
 ## Taller # 1: figuras geometricas
 
